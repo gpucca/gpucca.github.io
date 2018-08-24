@@ -17,19 +17,16 @@ body,html{
 	width: 10%;
 	height: 100%;
 	float: left;
-	border:2px solid black;
 }
 .cot2{
 	width: 80%;
 	height: 100%;
 	float: left;
-	border:2px solid red;
 }
 .cot3{
 	width: 10%;
 	height: 100%;
 	float: left;
-	border:2px solid black;
 }
 .r {
 	font-size: 100%;
@@ -118,26 +115,22 @@ body{
 	max-width: 360px;
 	height: 640px;
 	overflow: scroll;
-	border:1px solid red;
 	margin: 0 auto;
 }
 .cot1{
 	width: 50px;
 	height: 200px;
 	float: left;
-	border:1px solid green;
 }
 .cot2{
 	width: 240px;
 	height: auto;
 	float: left;
-	border:1px solid blue;
 }
 .cot3{
 	width: 50px;
 	height: 200px;
 	float: left;
-	border:1px solid green;
 }
 .content, .content1 {
 	width:238px;
