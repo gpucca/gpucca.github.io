@@ -22,7 +22,7 @@
 			<img id="img3" src="image/garu.png" ></img>
 		</div>
 		<div class="cot2">
-			<p><b>&#9832; Có &#9838; Không &#9832;</b></p>
+			<p onclick="Reset()"><b>&#9832; Có &#9838; Không &#9832;</b></p>
 			<div class="content">
 				<div class="row m-top">
 					<div class="col-md-4 col-xs-4 col-sm-4">				
@@ -50,7 +50,7 @@
 					</div>
 				</div>
 			</div>
-			<p><b>&#9851; Vietlott &#9851;</b></p>
+			<p onclick="ResetVlt()"><b>&#9851; Vietlott &#9851;</b></p>
 			<div class="content1">
 				<div class="row m-top">
 					<input id="v1" type="text" value="0" readonly>
@@ -149,6 +149,14 @@
 		document.getElementById('v5').value = random5;
 		document.getElementById('v6').value = random6;
 		alert("Ta ban cho con dãy số này này :))");
+	}
+	function ResetVlt(){
+		document.getElementById('v1').value = "0";
+		document.getElementById('v2').value = "0";
+		document.getElementById('v3').value = "0";
+		document.getElementById('v4').value = "0";
+		document.getElementById('v5').value = "0";
+		document.getElementById('v6').value = "0";
 	}
 </script>
 </html>
