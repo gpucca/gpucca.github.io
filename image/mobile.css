@@ -123,7 +123,7 @@ body{
 	float: left;
 }
 .cot2{
-	width: 240px;
+	width: 260px;
 	height: auto;
 	float: left;
 }
@@ -133,14 +133,17 @@ body{
 	float: left;
 }
 .content, .content1 {
-	width:238px;
+	width:258px;
 	height: 200px;
 	border-bottom: 10px ridge #66ff33;
 	margin-top: 20px;
 }
 p{text-align: center;font-size: 26px;margin-top: 10px}
 #result{width:80px;box-shadow: 0px 0px 30px #3333cc;margin: 0 auto;display: block;}
-.rd{margin: 0 auto;display: block;font-size:8px}
+.rd{font-size: 8px;
+	width: 56px;
+	margin: 0 auto;
+	display: block;}
 .m-top{margin-top: 25px}
 .r {
 	font-size: 12px;
@@ -159,7 +162,7 @@ p{text-align: center;font-size: 26px;margin-top: 10px}
 	text-align: center;
 }
 #v1{
-	margin-left: 45px;
+	margin-left:55px;
 }
 .button {
 	/*margin-left: 44%;	*/
@@ -208,10 +211,10 @@ p{text-align: center;font-size: 26px;margin-top: 10px}
 	opacity: 1;
 	right: 0;
 }
-#img1{width: 50px;height: 50px;margin-bottom: 100px}
-#img2{width: 35px;height: 50px;margin-bottom: 100px}
+#img1{width: 50px;height: 50px;margin-bottom: 200px}
+#img2{width: 35px;height: 50px;margin-bottom: 200px;margin-left: 14px}
 #img3{width: 50px;height: 50px;}
-#img4{width: 50px;height: 50px;margin-bottom: 100px}
-#img5{width: 35px;height: 50px;margin-bottom: 100px}
+#img4{width: 50px;height: 50px;margin-bottom: 200px}
+#img5{width: 35px;height: 50px;margin-bottom: 200px}
 #img6{width: 50px;height: 50px;}
 }
