@@ -696,80 +696,89 @@ else if (window.attachEvent){
 ////////////////////////////////////////////////////////////////////////
 
 function CoKhong1(){
-    var random = Math.floor(Math.random() * 100) + 1;
-    var yesno;
-    if(random % 2 == 0){
-      yesno = "Có";
-    }else{
-      yesno = "Không";
-    }
-    document.getElementById('r1').value = yesno;
+  var random = Math.floor(Math.random() * 100) + 1;
+  var yesno;
+  if(random % 2 == 0){
+    yesno = "Có";
+  }else{
+    yesno = "Không";
   }
-  function CoKhong2(){
-    var random = Math.floor(Math.random() * 100) + 1;
-    var yesno;
-    if(random % 2 == 0){
-      yesno = "Có";
-    }else{
-      yesno = "Không";
-    }
-    document.getElementById('r2').value = yesno;
+  document.getElementById('r1').value = yesno;
+}
+function CoKhong2(){
+  var random = Math.floor(Math.random() * 100) + 1;
+  var yesno;
+  if(random % 2 == 0){
+    yesno = "Có";
+  }else{
+    yesno = "Không";
   }
-  function CoKhong3(){
-    var random = Math.floor(Math.random() * 100) + 1;
-    var yesno;
-    if(random % 2 == 0){
-      yesno = "Có";
-    }else{
-      yesno = "Không";
-    }
-    document.getElementById('r3').value = yesno;
+  document.getElementById('r2').value = yesno;
+}
+function CoKhong3(){
+  var random = Math.floor(Math.random() * 100) + 1;
+  var yesno;
+  if(random % 2 == 0){
+    yesno = "Có";
+  }else{
+    yesno = "Không";
   }
-  function Reset(){
-    document.getElementById('r1').value = "NULL";
-    document.getElementById('r2').value = "NULL";
-    document.getElementById('r3').value = "NULL";
-    document.getElementById('result').value = "Kết Quả";
-  }
-  
+  document.getElementById('r3').value = yesno;
+}
+function Reset(){
+  document.getElementById('r1').value = "NULL";
+  document.getElementById('r2').value = "NULL";
+  document.getElementById('r3').value = "NULL";
+  document.getElementById('result').value = "Kết Quả";
+}
+
 function Vietlott(){
-    var random1 = Math.floor(Math.random() * 45) + 1;
-    var random2 = Math.floor(Math.random() * 45) + 1;
-    var random3 = Math.floor(Math.random() * 45) + 1;
-    var random4 = Math.floor(Math.random() * 45) + 1;
-    var random5 = Math.floor(Math.random() * 45) + 1;
-    var random6 = Math.floor(Math.random() * 45) + 1;
-    if(random1 == random2){random1 = Math.floor(Math.random() * 45) + 1;}
-    if(random1 == random3){random1 = Math.floor(Math.random() * 45) + 1;}
-    if(random1 == random4){random1 = Math.floor(Math.random() * 45) + 1;}
-    if(random1 == random5){random1 = Math.floor(Math.random() * 45) + 1;}
-    if(random1 == random6){random1 = Math.floor(Math.random() * 45) + 1;}
-    if(random2 == random3){random2 = Math.floor(Math.random() * 45) + 1;}
-    if(random2 == random4){random2 = Math.floor(Math.random() * 45) + 1;}
-    if(random2 == random5){random2 = Math.floor(Math.random() * 45) + 1;}
-    if(random2 == random6){random2 = Math.floor(Math.random() * 45) + 1;}
-    if(random3 == random4){random3 = Math.floor(Math.random() * 45) + 1;}
-    if(random3 == random5){random3 = Math.floor(Math.random() * 45) + 1;}
-    if(random3 == random6){random3 = Math.floor(Math.random() * 45) + 1;}
-    if(random4 == random5){random4 = Math.floor(Math.random() * 45) + 1;}
-    if(random4 == random6){random4 = Math.floor(Math.random() * 45) + 1;}
-    if(random5 == random6){random5 = Math.floor(Math.random() * 45) + 1;}
-    document.getElementById('v1').value = random1;
-    document.getElementById('v2').value = random2;
-    document.getElementById('v3').value = random3;
-    document.getElementById('v4').value = random4;
-    document.getElementById('v5').value = random5;
-    document.getElementById('v6').value = random6;
-    alert("Ta ban cho con dãy số này này :))");
-  }
-  function ResetVlt(){
-    document.getElementById('v1').value = "0";
-    document.getElementById('v2').value = "0";
-    document.getElementById('v3').value = "0";
-    document.getElementById('v4').value = "0";
-    document.getElementById('v5').value = "0";
-    document.getElementById('v6').value = "0";
-  }
+  var random1 = Math.floor(Math.random() * 45) + 1;
+  var random2 = Math.floor(Math.random() * 45) + 1;
+  var random3 = Math.floor(Math.random() * 45) + 1;
+  var random4 = Math.floor(Math.random() * 45) + 1;
+  var random5 = Math.floor(Math.random() * 45) + 1;
+  var random6 = Math.floor(Math.random() * 45) + 1;
+  if(random1 == random2){random1 = Math.floor(Math.random() * 45) + 1;}
+  if(random1 == random3){random1 = Math.floor(Math.random() * 45) + 1;}
+  if(random1 == random4){random1 = Math.floor(Math.random() * 45) + 1;}
+  if(random1 == random5){random1 = Math.floor(Math.random() * 45) + 1;}
+  if(random1 == random6){random1 = Math.floor(Math.random() * 45) + 1;}
+  if(random2 == random3){random2 = Math.floor(Math.random() * 45) + 1;}
+  if(random2 == random4){random2 = Math.floor(Math.random() * 45) + 1;}
+  if(random2 == random5){random2 = Math.floor(Math.random() * 45) + 1;}
+  if(random2 == random6){random2 = Math.floor(Math.random() * 45) + 1;}
+  if(random3 == random4){random3 = Math.floor(Math.random() * 45) + 1;}
+  if(random3 == random5){random3 = Math.floor(Math.random() * 45) + 1;}
+  if(random3 == random6){random3 = Math.floor(Math.random() * 45) + 1;}
+  if(random4 == random5){random4 = Math.floor(Math.random() * 45) + 1;}
+  if(random4 == random6){random4 = Math.floor(Math.random() * 45) + 1;}
+  if(random5 == random6){random5 = Math.floor(Math.random() * 45) + 1;}
+  document.getElementById('v1').value = random1;
+  document.getElementById('v2').value = random2;
+  document.getElementById('v3').value = random3;
+  document.getElementById('v4').value = random4;
+  document.getElementById('v5').value = random5;
+  document.getElementById('v6').value = random6;
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  var thoigian = new Date();
+  var gio = thoigian.getHours();
+  var phut = thoigian.getMinutes();
+  var giay = thoigian.getSeconds();
+  alert("__Hôm nay ngày "+dd+"-"+mm+"-"+yyyy + "\n" +
+   "__Đồng hồ chỉ " +gio+":"+phut+":"+giay+"\n__Ta ban cho con dãy số này này :)\n__Nếu ăn thì đừng quên ta :D");
+}
+function ResetVlt(){
+  document.getElementById('v1').value = "0";
+  document.getElementById('v2').value = "0";
+  document.getElementById('v3').value = "0";
+  document.getElementById('v4').value = "0";
+  document.getElementById('v5').value = "0";
+  document.getElementById('v6').value = "0";
+}
 ////////////////////////////////////////////////////////////////////////
 function lc(){
   var lc1 = document.getElementById('inp1').value;
@@ -795,6 +804,15 @@ function lc(){
     if (randomlc == 1) {document.getElementById('lc').value = lc1;}
     if (randomlc == 2) {document.getElementById('lc').value = lc2;}
   }
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  var thoigian = new Date();
+  var gio = thoigian.getHours();
+  var phut = thoigian.getMinutes();
+  var giay = thoigian.getSeconds();
+  alert("__Hôm nay ngày "+dd+"-"+mm+"-"+yyyy + "\n" + "__Đồng hồ chỉ " +gio+":"+phut+":"+giay+"\n__Ta khuyên ngươi nên nghe theo ta . . .");
 }
 function rslc(){
   document.getElementById('inp1').value = "";
