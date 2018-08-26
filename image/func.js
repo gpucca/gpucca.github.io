@@ -785,9 +785,19 @@ function lc(){
   var lc2 = document.getElementById('inp2').value;
   var lc3 = document.getElementById('inp3').value;
   var randomlc = Math.floor(Math.random() * 3) + 1;
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  var thoigian = new Date();
+  var gio = thoigian.getHours();
+  var phut = thoigian.getMinutes();
+  var giay = thoigian.getSeconds();
   if ( (lc1 == "" && lc2 == "") || (lc1 == "" && lc3 == "") || (lc2 == "" && lc3 == "") ) {
     alert("Bạn phải nhập ít nhất 2 lựa chọn chứ :D");
-  } 
+  } else {
+    alert("__Hôm nay ngày "+dd+"-"+mm+"-"+yyyy + "\n" + "__Đồng hồ chỉ " +gio+":"+phut+":"+giay+"\n__Ta khuyên ngươi nên nghe theo ta . . .");
+  }
   if (randomlc == 1) {document.getElementById('lc').value = lc1;}
   if (randomlc == 2) {document.getElementById('lc').value = lc2;}
   if (randomlc == 3) {document.getElementById('lc').value = lc3;}
@@ -804,15 +814,7 @@ function lc(){
     if (randomlc == 1) {document.getElementById('lc').value = lc1;}
     if (randomlc == 2) {document.getElementById('lc').value = lc2;}
   }
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth()+1; //January is 0!
-  var yyyy = today.getFullYear();
-  var thoigian = new Date();
-  var gio = thoigian.getHours();
-  var phut = thoigian.getMinutes();
-  var giay = thoigian.getSeconds();
-  alert("__Hôm nay ngày "+dd+"-"+mm+"-"+yyyy + "\n" + "__Đồng hồ chỉ " +gio+":"+phut+":"+giay+"\n__Ta khuyên ngươi nên nghe theo ta . . .");
+  
 }
 function rslc(){
   document.getElementById('inp1').value = "";
