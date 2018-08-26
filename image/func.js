@@ -694,6 +694,7 @@ else if (window.attachEvent){
 })();
 }//End.
 ////////////////////////////////////////////////////////////////////////
+
 function CoKhong1(){
     var random = Math.floor(Math.random() * 100) + 1;
     var yesno;
@@ -730,26 +731,7 @@ function CoKhong1(){
     document.getElementById('r3').value = "NULL";
     document.getElementById('result').value = "Kết Quả";
   }
-  function showtime(){
-    var x = document.getElementById("r1").value;
-    var y = document.getElementById("r2").value;
-    var z = document.getElementById("r3").value;
-    var s;
-    if (x=="NULL" || y=="NULL" || z=="NULL") {
-      s = "Kết Quả";
-    }else if(x == "Có" && (y == "Có" || z == "Có")){
-      s = "Có";
-    }else if(x == "Không" && (y == "Không" || z == "Không")){
-      s = "Không";
-    }else if (y=="Có" && (x=="Có"||z=="Có")) {
-      s = "Có";
-    }else if (y=="Không" && (x=="Không"||z=="Không")) {
-      s = "Không";
-    }
-    document.getElementById('result').innerHTML = s;
-    setTimeout(showtime,1);
-  }
-  showtime();
+  
 function Vietlott(){
     var random1 = Math.floor(Math.random() * 45) + 1;
     var random2 = Math.floor(Math.random() * 45) + 1;
@@ -820,3 +802,4 @@ function rslc(){
   document.getElementById('inp3').value = "";
   document.getElementById('lc').value = "";
 }
+

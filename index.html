@@ -126,4 +126,26 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	function showtime(){
+    var x = document.getElementById("r1").value;
+    var y = document.getElementById("r2").value;
+    var z = document.getElementById("r3").value;
+    var s;
+    if (x=="NULL" || y=="NULL" || z=="NULL") {
+      s = "Kết Quả";
+    }else if(x == "Có" && (y == "Có" || z == "Có")){
+      s = "Có";
+    }else if(x == "Không" && (y == "Không" || z == "Không")){
+      s = "Không";
+    }else if (y=="Có" && (x=="Có"||z=="Có")) {
+      s = "Có";
+    }else if (y=="Không" && (x=="Không"||z=="Không")) {
+      s = "Không";
+    }
+    document.getElementById('result').innerHTML = s;
+    setTimeout(showtime,1);
+  }
+  showtime();
+</script>
 </html>
