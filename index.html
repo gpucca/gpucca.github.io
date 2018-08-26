@@ -8,10 +8,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- user-scalable=no / no zoom-->
 	<meta name="theme-color" content="#ff33cc">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="image/func.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="image\mobile.css">
 </head>
 <body>
@@ -22,35 +30,35 @@
 			<img id="img3" src="image/garu.png" ></img>
 		</div>
 		<div class="cot2">
-			<p onclick="Reset()"><b>&#9832; Có &#9838; Không &#9832;</b></p>
+			<p id="ppp" onclick="Reset()" onselectstart="return false"><b>&#9832; Có &#9838; Không &#9832;</b></p>
 			<div class="content">
 				<div class="row m-top">
-					<div class="col-md-4 col-xs-4 col-sm-4">				
+					<div class="col">				
 						<input id="r1" type="text" class="btn btn-success r" value="NULL" readonly/>				
 					</div>
-					<div class="col-md-4 col-xs-4 col-sm-4">
+					<div class="col">
 						<input id="r2" type="text" class="btn btn-danger r" value="NULL" readonly/>
 					</div>
-					<div class="col-md-4 col-xs-4 col-sm-4">
+					<div class="col">
 						<input id="r3" type="text" class="btn btn-warning r" value="NULL" readonly/>
 					</div>
 				</div>
 				<div class="row m-top" onload="showtime();">
-					<button id="result" onclick="Reset()" class="btn btn-outline-dark">Kết Quả</button>
+					<button id="result" onclick="Reset()" class="btn btn-outline-dark" onselectstart="return false">Kết Quả</button>
 				</div>
 				<div class="row m-top">
-					<div class="col-md-4 col-xs-4 col-sm-4">				
-						<button onclick="CoKhong1()" class="btn btn-info rd" >Random</button>				
+					<div class="col">				
+						<button onclick="CoKhong1()" class="btn btn-info rd" onselectstart="return false">Random</button>				
 					</div>
-					<div class="col-md-4 col-xs-4 col-sm-4">
-						<button onclick="CoKhong2()" class="btn btn-info rd" >Random</button>
+					<div class="col">
+						<button onclick="CoKhong2()" class="btn btn-info rd" onselectstart="return false">Random</button>
 					</div>
-					<div class="col-md-4 col-xs-4 col-sm-4">
-						<button onclick="CoKhong3()" class="btn btn-info rd" >Random</button>
+					<div class="col">
+						<button onclick="CoKhong3()" class="btn btn-info rd" onselectstart="return false">Random</button>
 					</div>
 				</div>
 			</div>
-			<p onclick="ResetVlt()"><b>&#9851; Vietlott &#9851;</b></p>
+			<p id="ppp" onclick="ResetVlt()" onselectstart="return false"><b>&#9851; Vietlott &#9851;</b></p>
 			<div class="content1">
 				<div class="row m-top">
 					<input id="v1" type="text" value="0" readonly>
@@ -62,101 +70,60 @@
 				</div>
 				<div class="row m-top">
 					<div class="col-md-12 col-xs-12 col-sm-12">
-						<button onclick="Vietlott()" class="button"><span>Random</span></button>
+						<button onclick="Vietlott()" class="button" onselectstart="return false"><span>Random</span></button>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="cot3">
-			<img id="img4" src="image/garu.png" ></img>
-			<img id="img5" src="image/love2.png"></img>
-			<img id="img6" src="image/pucca.png" ></img>
+			<div class="content2">
+				<marquee id="title" onclick="rslc()" onselectstart="return false" >Nếu bạn đang phân vân giữa 2 hoặc 3 lựa chọn hãy viết chúng vào đây và ta sẽ chọn giúp</marquee>
+				<div class="getText">
+					<div class="row m-top-1">
+						<label for="inp" class="inp">
+							<input type="text" id="inp1" placeholder="&nbsp;">
+							<span class="label">Lựa chọn 1</span>
+							<span class="border"></span>
+						</label>
+					</div>
+					<div class="row m-top-1">
+						<label for="inp" class="inp">
+							<input type="text" id="inp2" placeholder="&nbsp;">
+							<span class="label">Lựa chọn 2</span>
+							<span class="border"></span>
+						</label>
+					</div>
+					<div class="row m-top-1">
+						<label for="inp" class="inp">
+							<input type="text" id="inp3" placeholder="&nbsp;">
+							<span class="label">Lựa chọn 3</span>
+							<span class="border"></span>
+						</label>
+					</div>
+				</div>
+				<div class="setText">
+					<div class="row m-top-1">
+						<div class="box">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-default">Nên chọn</span>
+								</div>
+								<input type="text" id="lc" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="cursor: not-allowed;">
+							</div>
+						</div>
+					</div>
+					<div class="row m-top">
+						<div class="box1">
+							<a class="rainbow rainbow-5" onclick="lc()" onselectstart="return false" style="color: white"><b> Lựa chọn !</b><a/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cot3">
+				<img id="img4" src="image/garu.png" ></img>
+				<img id="img5" src="image/love2.png"></img>
+				<img id="img6" src="image/pucca.png" ></img>
+			</div>
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-	function CoKhong1(){
-		var random = Math.floor(Math.random() * 100) + 1;
-		var yesno;
-		if(random % 2 == 0){
-			yesno = "Có";
-		}else{
-			yesno = "Không";
-		}
-		document.getElementById('r1').value = yesno;
-	}
-	function CoKhong2(){
-		var random = Math.floor(Math.random() * 100) + 1;
-		var yesno;
-		if(random % 2 == 0){
-			yesno = "Có";
-		}else{
-			yesno = "Không";
-		}
-		document.getElementById('r2').value = yesno;
-	}
-	function CoKhong3(){
-		var random = Math.floor(Math.random() * 100) + 1;
-		var yesno;
-		if(random % 2 == 0){
-			yesno = "Có";
-		}else{
-			yesno = "Không";
-		}
-		document.getElementById('r3').value = yesno;
-	}
-	function Reset(){
-		document.getElementById('r1').value = "NULL";
-		document.getElementById('r2').value = "NULL";
-		document.getElementById('r3').value = "NULL";
-		document.getElementById('result').value = "Kết Quả";
-	}
-</script>
-<script type="text/javascript">
-	function showtime(){
-		var x = document.getElementById("r1").value;
-		var y = document.getElementById("r2").value;
-		var z = document.getElementById("r3").value;
-		var s;
-		if (x=="NULL" || y=="NULL" || z=="NULL") {
-			s = "Kết Quả";
-		}else if(x == "Có" && (y == "Có" || z == "Có")){
-			s = "Có";
-		}else if(x == "Không" && (y == "Không" || z == "Không")){
-			s = "Không";
-		}else if (y=="Có" && (x=="Có"||z=="Có")) {
-			s = "Có";
-		}else if (y=="Không" && (x=="Không"||z=="Không")) {
-			s = "Không";
-		}
-		document.getElementById('result').innerHTML = s;
-		setTimeout(showtime,1);
-	}
-	showtime();
-</script>
-<script type="text/javascript">
-	function Vietlott(){
-		var random1 = Math.floor(Math.random() * 45) + 1;
-		var random2 = Math.floor(Math.random() * 45) + 1;
-		var random3 = Math.floor(Math.random() * 45) + 1;
-		var random4 = Math.floor(Math.random() * 45) + 1;
-		var random5 = Math.floor(Math.random() * 45) + 1;
-		var random6 = Math.floor(Math.random() * 45) + 1;
-		document.getElementById('v1').value = random1;
-		document.getElementById('v2').value = random2;
-		document.getElementById('v3').value = random3;
-		document.getElementById('v4').value = random4;
-		document.getElementById('v5').value = random5;
-		document.getElementById('v6').value = random6;
-		alert("Ta ban cho con dãy số này này :))");
-	}
-	function ResetVlt(){
-		document.getElementById('v1').value = "0";
-		document.getElementById('v2').value = "0";
-		document.getElementById('v3').value = "0";
-		document.getElementById('v4').value = "0";
-		document.getElementById('v5').value = "0";
-		document.getElementById('v6').value = "0";
-	}
-</script>
 </html>
