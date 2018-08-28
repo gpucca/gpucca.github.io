@@ -802,17 +802,17 @@ function lc(){
   if (randomlc == 2) {document.getElementById('lc').value = lc2;}
   if (randomlc == 3) {document.getElementById('lc').value = lc3;}
   if (lc1 == "") {
-    randomlc = Math.floor(Math.random() * 2) + 1;
-    if (randomlc == 1) {document.getElementById('lc').value = lc2;}
-    if (randomlc == 2) {document.getElementById('lc').value = lc3;}
+    randomlc = Math.floor(Math.random() * 100) + 1;
+    if (randomlc % 2 == 0) {document.getElementById('lc').value = lc2;}
+    if (randomlc % 2 != 0) {document.getElementById('lc').value = lc3;}
   }else if (lc2 == "") {
-    randomlc = Math.floor(Math.random() * 2) + 1;
-    if (randomlc == 1) {document.getElementById('lc').value = lc1;}
-    if (randomlc == 2) {document.getElementById('lc').value = lc3;}
+    randomlc = Math.floor(Math.random() * 100) + 1;
+    if (randomlc % 2 == 0) {document.getElementById('lc').value = lc1;}
+    if (randomlc % 2 != 0) {document.getElementById('lc').value = lc3;}
   }else if (lc3 == "") {
-    randomlc = Math.floor(Math.random() * 2) + 1;
-    if (randomlc == 1) {document.getElementById('lc').value = lc1;}
-    if (randomlc == 2) {document.getElementById('lc').value = lc2;}
+    randomlc = Math.floor(Math.random() * 100) + 1;
+    if (randomlc % 2 == 0) {document.getElementById('lc').value = lc1;}
+    if (randomlc % 2 != 0) {document.getElementById('lc').value = lc2;}
   }
   
 }
