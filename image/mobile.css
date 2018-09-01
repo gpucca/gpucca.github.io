@@ -222,7 +222,33 @@ body{
     background-position:20vw;
   }
 }
-
+#word {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  /*margin-top: 20%;*/
+  background-color: #9999ff;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  animation: mymove 5s both;
+  opacity: 0;
+}
+#word:hover{
+  border:1px solid red;
+}
+#word:active{
+	border: 1px solid #00ff00;
+}
+@keyframes mymove {
+  to {opacity:1;}
+}
+#fb{
+	font-size:24px;
+	color:red;
+	margin-left: 10px;
+	margin-top: 5px;
+}
 /*///////////////////////////////////////////////*/
 /*///////////////////////////////////////////////*/
 /*///////////////////////////////////////////////*/
@@ -466,6 +492,33 @@ body{
   to {
     background-position:20vw;
   }
+}
+#word {
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  /*margin-top: 20%;*/
+  background-color: #9999ff;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  animation: mymove 5s both;
+  opacity: 0;
+}
+#word:hover{
+  border:1px solid red;
+}
+#word:active{
+	border: 1px solid #00ff00;
+}
+@keyframes mymove {
+  to {opacity:1;}
+}
+#fb{
+	font-size:20px;
+	color:red;
+	margin-left: 8px;
+	margin-top: 5px;
 }
 }
 /*///////////////////////////////////////////////*/
@@ -711,5 +764,32 @@ body{
   to {
     background-position:20vw;
   }
+}
+#word {
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  /*margin-top: 20%;*/
+  background-color: #9999ff;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  animation: mymove 5s both;
+  opacity: 0;
+}
+#word:hover{
+  border:1px solid red;
+}
+#word:active{
+	border: 1px solid #00ff00;
+}
+@keyframes mymove {
+  to {opacity:1;}
+}
+#fb{
+	font-size:20px;
+	color:red;
+	margin-left: 8px;
+	margin-top: 5px;
 }
 }
